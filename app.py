@@ -171,7 +171,7 @@ def main():
     #lastDate = date(2023, 3, 14)
     #st.markdown("Latest Sensor Reporing Time: " + lastDate.strftime('%Y-%m-%d'))
     #st.metric(label="Current State:", value=current_thickness1, delta=delta_thickness1)
-    df = pd.read_excel("partList.xlsx")
+    df = pd.read_csv("partList.csv")
     st.dataframe(
         df,
         hide_index=True,
